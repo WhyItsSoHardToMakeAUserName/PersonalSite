@@ -31,17 +31,17 @@
       <div class="btn_app" id="btn_app">
         <button class="menu" id="menu" onclick="show_menu1()"><img src="icons/apps.svg" alt="" class="img_btn"></button>
       </div>
-      <nav class="nav_bar">
-        <!-- <p class="nav_name">Arsen</p> -->
-        <ul class="nav_links">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">User</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#">Edu</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">ContactME</a></li>
-        </ul>
-      </nav>
+      <div class="nav_bar"> 
+        <div class="list_links">
+        <p class="nav_links"><a class="link" href="#Home">Home</a></p>
+        <p class="nav_links"><a class="link" href="#About">About</a></p>
+        <p class="nav_links"><a class="link" href="#Skills">Skills</a></p>
+        <p class="nav_links qali"><a class="link" href="#Quali">Qualification</a></p>
+        <p class="nav_links"><a class="link" href="">ContactMe</a></p>
+      </div>
+      </div>
+       
+        
 
 
 
@@ -135,7 +135,7 @@
 
           <div class="Skills_container">
             <div class="Skills_container_p">
-            <div class="Skills_data1">
+            <div class="Skills_data1" id="Skills_data1">
               <div class="Skills_data_header">
                 <img src="icons/server-connection.svg" class="Skills_img1" alt="">
                 <div class="header_info">
@@ -152,12 +152,12 @@
                 </ul>
               </div>
             </div>
-            <div class="Skills_data2">
+            <div class="Skills_data2" id="Skills_data2">
               <div class="Skills_data_header">
                 <img src="icons/code.svg" class="Skills_img1" alt="">
                 <div class="header_info">
                   <h1 class="header_h">Frontend Development</h1>
-                  <p class="header_p">More than 10 days</p>
+                  <p class="header_p">More than 15 days</p>
                 </div><button class="arrow_btn2" id="arrow_btn2" onclick="show_skill_data2()">
                   <img src="icons/arrow.svg" class="Skills_img2" id="SKills_img22" alt="">
                 </button>
@@ -185,8 +185,12 @@
           </div>
           </div>
         </section>
+<!-- =================================================Quali Page======================================== -->
+        <section class="Quali" id="Quali">
+          <h2 class="section_title">Qualification</h2>
+          <p class="section_subtitle">My Professional Journey</p>
 
-
+        </section>
 
 
 
