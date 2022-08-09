@@ -29,7 +29,7 @@ function show_skill_data1() {
     if ( document.getElementById('Skill_data_in1').style.left === '-300%') {
     document.getElementById('SKills_img21').style.transform = 'rotate(180deg)'
     document.getElementById('Skill_data_in1').style.left = '0';
-    document.getElementById('Skills_data1').style.padding = '0 0 40px'
+    document.getElementById('Skills_data1').style.padding = '0 0 60px'
 } else {
     document.getElementById('SKills_img21').style.transform = 'rotate(0deg)'
     document.getElementById('Skill_data_in1').style.left = '-300%';
@@ -47,6 +47,22 @@ function show_skill_data2() {
     document.getElementById('Skills_data2').style.paddingBottom = '0';
 }
 }
+
+function show_edu_data() {
+    document.getElementById('edu_data').style.visibility = 'visible'
+    document.getElementById('work_data').style.visibility = 'hidden'
+    document.getElementById('edu_line').style.opacity = '1'
+    document.getElementById('work_line').style.opacity = '0'
+}
+function show_work_data() {
+    document.getElementById('work_data').style.visibility = 'visible'
+    document.getElementById('edu_data').style.visibility = 'hidden'
+    document.getElementById('edu_line').style.opacity = '0'
+    document.getElementById('work_line').style.opacity = '1'
+}
+
+
+
 
 window.addEventListener("scroll",function(){
   hide_menu()

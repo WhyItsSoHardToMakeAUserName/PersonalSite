@@ -351,13 +351,13 @@ li, a {
 
 /* =======================================================Reuseable CSS Classes======================================== */
 .section_title{
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
 }
 .section_subtitle {
     /* display: block; */
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 10px;
     color: #A2B5BB;
 }
@@ -470,7 +470,7 @@ li, a {
 }
 .Skills {
     margin-top: 20px;
-    height: 85vh;
+    height: auto;
     margin-bottom: 0;
 }
 .Skills_img1 {
@@ -563,6 +563,11 @@ hr {
     background-color: rgb(238, 171, 192);
 }
 
+.Skills_data1, .Skills_data2 {
+    transition: 0.5s;
+    height: 100px;
+}
+
 .Skill_data_in1, .Skill_data_in2 {
     position: relative;
     height: auto;
@@ -610,8 +615,114 @@ hr {
 
 /* ==================================================Quali======================================== */
 .Quali {
-    margin-top: 10px;
+    margin-top: 40px;
 }
+
+.edu_img, .work_img {
+    width: 54px;
+    filter: invert(66%) sepia(64%) saturate(2336%) hue-rotate(300deg) brightness(97%) contrast(84%);
+}
+
+.educ, .workc {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+.Quali_name {
+    padding: 10px;
+    font-size: 26px;
+}
+.edu_work {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(1, auto);
+    justify-self: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    column-gap: 20px;
+}
+.data_list {
+    height: 600px;
+}
+.edu_data {
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    grid-template-rows: repeat(4, 125px);
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.edu_data h1 {
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+    padding-bottom: 8px;
+}
+
+.edu_data p {
+    padding-bottom: 22px;
+    font-size: 16px;
+    color: #A2B5BB;
+}
+.data_box {
+    padding-left: 34px;
+}
+.work_data {
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    grid-template-rows: repeat(3, 125px);
+    position: relative;
+    width: 400px;
+    height: 375px;
+    margin: 0 auto;
+    opacity: 1;
+    bottom: 490px;
+    transition: 0.2s;
+}
+.work_data h1 {
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+    padding-bottom: 8px;
+}
+
+.work_data p {
+    padding-bottom: 22px;
+    font-size: 16px;
+    color: #A2B5BB;
+}
+
+.ver_line {
+    position: relative;
+    top: 220px;
+    transform: rotate(90deg);
+    margin: 0 auto;
+    z-index: 100;
+    width: 0;
+    height: 4px;
+    transition: 0.5s;
+}
+.work_line {
+    left: 20px;
+    top: 158px;
+    width: 270px;
+    
+}
+
+.edu_line {
+    left: 30px;
+    top: 216px;
+    width: 380px;
+}
+
+
 
 
 @media screen and (max-width: 767px) {
